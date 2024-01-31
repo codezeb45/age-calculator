@@ -1,0 +1,83 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+.calculator {
+    width: 100%;
+    min-height: 100vh;
+    padding-left: 100px;
+    padding-top: 50px;
+    display: flex;
+    background: linear-gradient(45deg,cadetblue,rgb(56, 103, 105));
+}
+.container {
+    width: auto;
+    height: auto;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+.container h1 {
+    padding-left: 1.5rem;
+    font-size: 2.6rem;
+    border-left: 2px solid white;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-bottom: 20px;
+}
+.container h1 span {
+    color: yellow;
+}
+.input-box {
+    width: 400px;
+    padding: 20px;
+    display: flex;
+    gap: 15px;
+    box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.3);
+}
+#input {
+    flex: 1;
+    outline: none;
+    border: none;
+    width: 80%;
+    height: 45px;
+    align-items: center;
+    padding: 14px 10px;
+    font-size: 1.2rem;
+    position: relative;
+}
+#input::-webkit-calendar-picker-indicator {
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: auto;
+    height: auto;
+    position: absolute;
+    background-position: calc(100% - 10px);
+    background-size: 30px;
+    cursor: pointer;
+}
+.input-box button {
+    height: 45px;
+    width: 25%;
+    border-radius: 0.7rem;
+    border: none;
+    background-color: rgb(41, 61, 61);
+    font-size: 1rem;
+    color: white;
+    cursor: pointer;
+}
+.container #message {
+    margin-top: 20px;
+    font-size: 1.5rem;
+    color: white;
+}
+.container #message span {
+    font-size: 1.6rem;
+    color: yellow;
+}
